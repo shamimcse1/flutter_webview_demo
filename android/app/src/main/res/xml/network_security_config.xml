@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <domain-config cleartextTrafficPermitted="true">
+        <domain includeSubdomains="true">ww3.tinyzone.org</domain>
+        <domain includeSubdomains="true">fuji9.com</domain>
+        <domain includeSubdomains="true">stikroltiltoowi.net</domain>
+    </domain-config>
+</network-security-config>
