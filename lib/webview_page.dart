@@ -32,12 +32,14 @@ class _WebviewPageState extends State<WebviewPage> {
                 javaScriptEnabled: true,
                 mediaPlaybackRequiresUserGesture: false, // ✅ Allows autoplay
                 useOnLoadResource: true, // ✅ Monitor network requests
+
               ),
               android: AndroidInAppWebViewOptions(
                 useWideViewPort: true,
                 builtInZoomControls: false,
                 displayZoomControls: false,
                 hardwareAcceleration: true, // ✅ Improves video playback
+                mixedContentMode: AndroidMixedContentMode.MIXED_CONTENT_ALWAYS_ALLOW,
               ),
               ios: IOSInAppWebViewOptions(
                 allowsInlineMediaPlayback: true, // ✅ iOS inline video fix
